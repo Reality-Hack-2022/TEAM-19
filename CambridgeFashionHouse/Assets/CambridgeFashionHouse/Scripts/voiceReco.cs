@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
@@ -24,6 +23,7 @@ public class voiceReco : MonoBehaviour
         actions.Add("red", Red);
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
+        print(keywordRecognizer.Keywords);
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
 
