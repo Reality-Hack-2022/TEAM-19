@@ -26,9 +26,9 @@ public class DistanceEffect : MonoBehaviour
 
     float normalize(float value)
     {
+        if (value > maxDist) value = maxDist;
+        if (value < minDist) value = minDist;
         float normalizedValue = (value - minDist) / (maxDist - minDist);
-        if (normalizedValue > maxDist) normalizedValue = maxDist;
-        if (normalizedValue < minDist) normalizedValue = minDist;
         return normalizedValue;
     }
 }
