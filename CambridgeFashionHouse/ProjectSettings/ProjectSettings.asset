@@ -697,8 +697,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/Tavius/Desktop/Projects/Reality Hack 2022/Cambridge Fashion
-      House/Magic Leap Dev Cert/realityhack2022.cert
+    m_CertPath: C:/Users/treyb/Desktop/TEAM-19/Magic Leap Dev Cert/realityhack2022.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:
