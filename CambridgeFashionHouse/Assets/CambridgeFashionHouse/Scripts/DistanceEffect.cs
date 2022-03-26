@@ -20,7 +20,7 @@ public class DistanceEffect : MonoBehaviour
         {
             float dist = Vector3.Distance(other.position, transform.position);
             // print("Distance to other: " + normalize(dist));
-            otherMaterial.color = new Color(1,normalize(dist),1);
+            otherMaterial.color = new Color(0.74902f, 0.38039f, normalize(dist));
         }
     }
 

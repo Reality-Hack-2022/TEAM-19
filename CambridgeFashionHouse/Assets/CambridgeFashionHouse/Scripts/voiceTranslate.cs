@@ -15,8 +15,9 @@ public class voiceTranslate : MonoBehaviour
 
     void Start()
     {
-        actions.Add("i like your outfit", Positive);
-        actions.Add("i like your style", Positive);
+        actions.Add("i like your outfit", Gift);
+        actions.Add("i like your style", Gift);
+        actions.Add("cool clothes", Gift);
         //actions.Add("okay", Okay);
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
@@ -33,7 +34,7 @@ public class voiceTranslate : MonoBehaviour
         actions[speech.text].Invoke();
     }
 
-    private void Positive()
+    private void Gift()
     {
         // transform.Translate(0, 0, -1);
         BubbleGift.GetComponent<Gift>().RotateNewTarget(this.gameObject);
