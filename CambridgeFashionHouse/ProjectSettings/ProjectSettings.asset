@@ -46,7 +46,7 @@ PlayerSettings:
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
-  m_StereoRenderingPath: 0
+  m_StereoRenderingPath: 2
   m_ActiveColorSpace: 1
   m_MTRendering: 1
   mipStripping: 0
@@ -603,19 +603,19 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    1: MAGICLEAP
-    7: MAGICLEAP
-    13: MAGICLEAP
-    14: MAGICLEAP
-    19: MAGICLEAP
-    21: MAGICLEAP
-    25: MAGICLEAP
-    27: MAGICLEAP
-    28: MAGICLEAP
-    29: MAGICLEAP
-    30: MAGICLEAP
-    32: MAGICLEAP
-    33: MAGICLEAP
+    1: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    7: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    13: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    14: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    19: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    21: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    25: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    27: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    28: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    29: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    30: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    32: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
+    33: MAGICLEAP;UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -704,8 +704,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/Tavius/Desktop/Projects/Reality Hack 2022/Cambridge Fashion
-      House/Magic Leap Dev Cert/realityhack2022.cert
+    m_CertPath: C:/Users/Z2G5-MITRealityHack/Desktop/TEAM-19/Magic Leap Dev Cert/realityhack2022.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:

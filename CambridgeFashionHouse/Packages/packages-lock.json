@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "com.magicleap.unitysdk": {
-      "version": "file:com.magicleap.unitysdk",
+      "version": "0.26.0",
       "depth": 0,
-      "source": "embedded",
+      "source": "registry",
       "dependencies": {
         "com.unity.xr.magicleap": "6.2.2"
-      }
+      },
+      "url": "https://registry.npmjs.org"
     },
     "com.unity.collab-proxy": {
       "version": "1.15.13",
