@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CloudsTexture:
-        m_Texture: {fileID: 8900000, guid: 136f1065d9912d54fbcc27ed9e4fa4ce, type: 3}
+        m_Texture: {fileID: 8900000, guid: f2bbac601853a524a995b66c86206431, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CometsTexture:
@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DarkCloudsTexture:
-        m_Texture: {fileID: 8900000, guid: ffbea5a011efcb74ca83e46d218f6e11, type: 3}
+        m_Texture: {fileID: 8900000, guid: b33597a62276e9b48bdf823018ec1c52, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -96,7 +96,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _StarsTexture:
-        m_Texture: {fileID: 8900000, guid: f2aead6a3f96ffb4c98e30ee31ff540c, type: 3}
+        m_Texture: {fileID: 8900000, guid: 7745ffc6fd0b979479c8af70785ac67e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SunDistortionTexture:
@@ -162,7 +162,7 @@ Material:
     - _ChomaticAberration: 0
     - _CloudOpacityExp: 2
     - _CloudsEmissionPower: 10
-    - _CloudsOpacityExp: 2
+    - _CloudsOpacityExp: 2.91
     - _CloudsOpacityPower: 1
     - _CloudsRampOffsetExp: 1
     - _CloudsRampOffsetExp2: 8
@@ -307,7 +307,7 @@ Material:
     - _Color0: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelGlowColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 0.15566036, b: 0.3800492, a: 1}
+    - _RimColor: {r: 1, g: 0.15686274, b: 0.7009158, a: 1}
     - _RimEmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimNoiseSpherizeCenter: {r: 0, g: 0, b: 0, a: 0}
     - _RimNoiseSpherizePosition: {r: 0, g: 0, b: 0, a: 0}
@@ -319,3 +319,4 @@ Material:
     - _Vector0: {r: 2, g: 4, b: 0, a: 0}
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector4: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
