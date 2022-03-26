@@ -19,8 +19,8 @@ public class ClothingPlacer : MonoBehaviour
         this.newPos.z = cameraTransform.position.z;
         this.transform.position = newPos;
 
-        print("Camera" + cameraTransform.position.y);
-        print("Pos y" + this.transform.position.y);
+        // print("Camera" + cameraTransform.position.y);
+        // print("Pos y" + this.transform.position.y);
 
         newRot.y = cameraTransform.eulerAngles.y;
         this.transform.eulerAngles = newRot;
