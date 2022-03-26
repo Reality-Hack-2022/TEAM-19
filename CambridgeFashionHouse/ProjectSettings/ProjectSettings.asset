@@ -46,7 +46,7 @@ PlayerSettings:
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
-  m_StereoRenderingPath: 0
+  m_StereoRenderingPath: 2
   m_ActiveColorSpace: 1
   m_MTRendering: 1
   mipStripping: 0
@@ -697,8 +697,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/Tavius/Desktop/Projects/Reality Hack 2022/Cambridge Fashion
-      House/Magic Leap Dev Cert/realityhack2022.cert
+    m_CertPath: C:/Users/kzhao/OneDrive/Documents/GitHub/TEAM-19/Magic Leap Dev Cert/realityhack2022.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:
