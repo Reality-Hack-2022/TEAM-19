@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
@@ -16,14 +15,17 @@ public class voiceReco : MonoBehaviour
     void Start()
     {
         actions.Add("forward", Forward);
-        actions.Add("top", Up);
+        actions.Add("top", Top);
         actions.Add("down", Down);
         actions.Add("back", Back);
         actions.Add("rotate", Rotate);
         actions.Add("green", Green);
         actions.Add("red", Red);
+        actions.Add("style", Close);
+        actions.Add("farther", Far);
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
+        print(keywordRecognizer.Keywords);
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
 
@@ -47,6 +49,16 @@ public class voiceReco : MonoBehaviour
         actions[speech.text].Invoke();
     }
 
+    private void Close()
+    {
+        transform.Translate(0, 0, -1);
+    }
+
+    private void Far()
+    {
+        transform.Translate(0, 0, 1);
+    }
+
     private void Forward()
     {
         transform.Translate(1, 0, 0);
@@ -67,7 +79,7 @@ public class voiceReco : MonoBehaviour
         transform.Rotate(0, 45, 0);
     }
 
-    private void Up()
+    private void Top()
     {
         transform.Translate(0, 1, 0);
     }
