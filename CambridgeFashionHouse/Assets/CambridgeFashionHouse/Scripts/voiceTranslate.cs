@@ -11,6 +11,7 @@ public class voiceTranslate : MonoBehaviour
 
     public KeywordRecognizer keywordRecognizer;
     private Dictionary<string, System.Action> actions = new Dictionary<string, Action>();
+    public GameObject BubbleGift;
 
     void Start()
     {
@@ -34,7 +35,8 @@ public class voiceTranslate : MonoBehaviour
 
     private void Positive()
     {
-        transform.Translate(0, 0, -1);
+        // transform.Translate(0, 0, -1);
+        BubbleGift.GetComponent<Gift>().RotateNewTarget(this.gameObject);
     }
     //private void changeAlpha(var color, var newAlpha)
     //{
