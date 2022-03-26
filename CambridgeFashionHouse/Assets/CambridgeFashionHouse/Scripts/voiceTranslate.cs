@@ -21,8 +21,10 @@ public class voiceTranslate : MonoBehaviour
         actions.Add("cool clothes", Gift);
         actions.Add("goodbye", Close);
         actions.Add("good bye", Close);
+        actions.Add("bye now", Close);
         actions.Add("see you", Close);
         actions.Add("have a good one", Close);
+        actions.Add("happy hacking", Close);
         //actions.Add("okay", Okay);
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
@@ -31,6 +33,18 @@ public class voiceTranslate : MonoBehaviour
         keywordRecognizer.Start();
 
         rend2 = GetComponent<MeshRenderer>();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyUp("space"))
+        {
+            Gift();
+        }
+        if (Input.GetKeyUp("enter"))
+        {
+            Close();
+        }
     }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speech)

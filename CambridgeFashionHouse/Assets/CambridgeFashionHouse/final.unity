@@ -1211,11 +1211,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 32a76832b79e84347ad9df08b12709c3, type: 2}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _distance
-      value: 2.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _heightOffset
-      value: -0.75
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _lateralOffset
@@ -1236,6 +1236,18 @@ PrefabInstance:
     - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1332,6 +1344,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7275763938170325082, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
     - {fileID: 7275763936968431720, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+    - {fileID: 7275763938221430328, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+    - {fileID: 7275763938221430330, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
 --- !u!114 &670943741
 MonoBehaviour:
@@ -2613,11 +2627,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 976b31720675c1a47be763ebf89dc566, type: 2}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _distance
-      value: 2.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _heightOffset
-      value: -0.75
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _lateralOffset
@@ -2638,6 +2652,18 @@ PrefabInstance:
     - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 7275763936968431637, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4065,14 +4091,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea05a203896b48146ab21000fc478d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distance: 1.75
+  _distance: 1.9
   _heightOffset: 0
   _lateralOffset: 0
   _positionSmoothTime: 5
   _rotationSmoothTime: 5
   _lookDirection: 2
   _placeOnAwake: 1
-  _placeOnUpdate: 1
+  _placeOnUpdate: 0
   _lockZRotation: 0
   _lockXRotation: 0
   _lockToXZPlane: 0
