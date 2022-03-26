@@ -691,13 +691,21 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/treyb/Desktop/TEAM-19/Magic Leap Dev Cert/realityhack2022.cert
+    m_CertPath: C:/Users/Tavius/Desktop/Projects/Reality Hack 2022/Cambridge Fashion
+      House/Magic Leap Dev Cert/realityhack2022.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:
@@ -705,11 +713,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 39cc0199-cd48-4380-a6d6-42b5ef910df7
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: CambridgeFashionHouse
+  organizationId: kotavy
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   virtualTexturingSupportEnabled: 0
