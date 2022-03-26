@@ -1211,7 +1211,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 32a76832b79e84347ad9df08b12709c3, type: 2}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _distance
-      value: 2
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: _heightOffset
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: _lateralOffset
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _lockXRotation
@@ -1718,6 +1726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rend2: {fileID: 0}
   BubbleGift: {fileID: 1162805945}
+  Manager: {fileID: 1350483704}
 --- !u!1 &1080468144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2385,6 +2394,11 @@ Transform:
   m_Father: {fileID: 1592761515}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!1 &1350483704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3953880393163517619, guid: ed8bd4257866ecb468f7cbeee9aa96ec, type: 3}
+  m_PrefabInstance: {fileID: 1445853708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1395862313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,7 +2613,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 976b31720675c1a47be763ebf89dc566, type: 2}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _distance
-      value: 2
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: _heightOffset
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+      propertyPath: _lateralOffset
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7275763936968431636, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
       propertyPath: _lockXRotation
@@ -2724,6 +2746,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7275763938170325082, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
     - {fileID: 7275763936968431720, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+    - {fileID: 7275763938221430330, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
+    - {fileID: 7275763938221430328, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
 --- !u!1 &1414785442 stripped
 GameObject:
@@ -2744,6 +2768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rend2: {fileID: 0}
   BubbleGift: {fileID: 1162805945}
+  Manager: {fileID: 0}
 --- !u!4 &1421678540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7165805066574482317, guid: 1a657663bad7ad143906d5660cc3db67, type: 3}
@@ -2804,6 +2829,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3953880393163517618, guid: ed8bd4257866ecb468f7cbeee9aa96ec, type: 3}
+      propertyPath: OtherUser
+      value: 
+      objectReference: {fileID: 1008979419}
+    - target: {fileID: 3953880393163517618, guid: ed8bd4257866ecb468f7cbeee9aa96ec, type: 3}
+      propertyPath: BubbleGift
+      value: 
+      objectReference: {fileID: 1162805945}
+    - target: {fileID: 3953880393163517618, guid: ed8bd4257866ecb468f7cbeee9aa96ec, type: 3}
+      propertyPath: OtherUser2
+      value: 
+      objectReference: {fileID: 1414785442}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8bd4257866ecb468f7cbeee9aa96ec, type: 3}
 --- !u!1 &1456262915
@@ -4028,7 +4065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea05a203896b48146ab21000fc478d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distance: 3
+  _distance: 1.75
   _heightOffset: 0
   _lateralOffset: 0
   _positionSmoothTime: 5

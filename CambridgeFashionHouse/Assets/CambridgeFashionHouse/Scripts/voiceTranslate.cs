@@ -12,12 +12,17 @@ public class voiceTranslate : MonoBehaviour
     public KeywordRecognizer keywordRecognizer;
     private Dictionary<string, System.Action> actions = new Dictionary<string, Action>();
     public GameObject BubbleGift;
+    public GameObject Manager;
 
     void Start()
     {
         actions.Add("i like your outfit", Gift);
         actions.Add("i like your style", Gift);
         actions.Add("cool clothes", Gift);
+        actions.Add("goodbye", Close);
+        actions.Add("good bye", Close);
+        actions.Add("see you", Close);
+        actions.Add("have a good one", Close);
         //actions.Add("okay", Okay);
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
@@ -38,6 +43,12 @@ public class voiceTranslate : MonoBehaviour
     {
         // transform.Translate(0, 0, -1);
         BubbleGift.GetComponent<Gift>().RotateNewTarget(this.gameObject);
+    }
+
+    private void Close()
+    {
+        // transform.Translate(0, 0, -1);
+        Manager.GetComponent<NewBehaviourScript>().showFinal();
     }
     //private void changeAlpha(var color, var newAlpha)
     //{

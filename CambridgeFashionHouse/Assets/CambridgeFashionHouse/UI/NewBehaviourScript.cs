@@ -8,6 +8,9 @@ public class NewBehaviourScript : MonoBehaviour
 {
 
     public GameObject[] Avatars;
+    public GameObject OtherUser;
+    public GameObject OtherUser2;
+    public GameObject BubbleGift;
     private int activeAvatarIndex = 0;
 
 
@@ -20,6 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         activeAvatarIndex = Avatars.Length-1;
         MLInput.OnControllerButtonDown += OnButtonDown;
+        // MLInput.OnTriggerUp += OnButtonDown;
         //MLInput.OnControllerButtonUp += OnButtonUp;
        // _controller = MLInput.GetController(MLInput.Hand.Left);
         check();
@@ -51,8 +55,6 @@ public class NewBehaviourScript : MonoBehaviour
         //}
     }
 
-   
-
     void check()
     {
         activeAvatarIndex = (activeAvatarIndex + 1) % Avatars.Length;
@@ -60,16 +62,27 @@ public class NewBehaviourScript : MonoBehaviour
         {
             if (i == activeAvatarIndex)
             {
-                if (counter == 5) return;
+                if (counter == 4) return;
                 Avatars[i].SetActive(true);
             }
             else
             {
-                if (counter == 6) return;
+                if (counter == 5) return;
+                if (counter == 4) {
+                    OtherUser.SetActive(true);
+                    OtherUser2.SetActive(true);
+                }
                 Avatars[i].SetActive(false);
             }
         }
         counter++;
     }
- 
+
+    public void showFinal()
+    {
+        Avatars[4].SetActive(true);
+        OtherUser.SetActive(false);
+        OtherUser2.SetActive(false);
+        BubbleGift.SetActive(false);
+    }
 }
